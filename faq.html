@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name=”robots” content=”noindex” />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Share Your Leisure, MODI(모디) - 자주 묻는 질문</title>
+  <meta property="og:title" content="Share Your Leisure, MODI" />
+  <meta property="og:description" content="모디 | 같이 있는, 가치 있는 즐거움" />
+  <meta property="og:image" content="favicon.png" />
+  <meta property="twitter:title" content="Share Your Leisure, MODI" />
+  <meta property="twitter:description" content="모디 | 같이 있는, 가치 있는 즐거움" />
+  <meta property="twitter:image" content="#" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" -->
+  <!-- integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="resource/css/reset.css" />
+  <link rel="stylesheet" href="resource/css/index.css" />
+  <link rel="stylesheet" href="resource/css/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script> -->
+  <script src="resource/lib/jquery-3.5.1-slim.js"></script>
+  <script src="resource/js/index.js"></script>
+  <script src="./master/News/register.html"></script>
+</head>
+
+<style>
+  .container:before,
+  .container:after {
+    content: none !important;
+  }
+
+  .margin_left_none {
+    margin-left: auto !important;
+  }
+
+  .margin_left_64 {
+    margin-left: 64px !important;
+  }
+</style>
+
+<body>
+  <!-- header S -->
+  <header class="pc">
+    <div class="container container__flex header__wrap">
+      <a href="./index.html">
+        <img src="resource/img/logo-modi-pc.svg" alt="LOGO">
+      </a>
+      <a href="/index.html" class="margin_left_none">Share Your Leisure, MODI</a>
+      <a href="/evangelist.html" class="margin_left_64" target="">에반젤리스트 모집</a>
+      <!-- <a href="/introduce.html">회사 소개</a>
+      <a href="/news.html">새로운 소식</a>
+      <a href="/faq.html">자주 묻는 질문</a>
+      <a href="/recruit.html">채용 공고</a> -->
+    </div>
+  </header>
+  <header class="mo">
+    <div class="container container__flex header__wrap">
+      <a href="./index.html">
+        <img src="resource/img/logo-modi-mobile.svg" alt="LOGO">
+      </a>
+      <i class="header__menu"></i>
+    </div>
+  </header>
+  <div class="side mo">
+    <div class="side__bg"></div>
+    <div class="side__container">
+      <p class="close__box"><i class="side__close"></i></p>
+      <a href="/index.html" target="">Share Your Leisure, MODI</a>
+      <a href="/evangelist.html" target="">에반젤리스트 모집</a>
+      <!-- <a href="/introduce.html">회사 소개</a>
+      <a href="/news.html">새로운 소식</a>
+      <a href="/faq.html">자주 묻는 질문</a>
+      <a href="/recruit.html">채용 공고</a>
+      <a href="javascript:void(0)" id="side_app_down">앱 다운로드</a>
+      <p class="side__app">
+        <a href="https://apps.apple.com/kr/app/%EB%AA%A8%EB%94%94-modi/id1609915040" target="_blank">앱스토어</a><br>
+        <a href="https://play.google.com/store/apps/details?id=com.welkey.moim" target="blank">구글플레이</a>
+      </p> -->
+    </div>
+  </div>
+  <!-- header E -->
+
+  <div class="wrapper">
+    <div class="img_wrap">
+      <img src="./assets/img/main_qna.png" alt="" class="main_img">
+      <img src="./assets/img/mob_faq" alt="" class="mob_img">
+      <p>자주 묻는 질문</p>
+    </div>
+
+    <div class="container faq_wrap">
+
+      <!-- value 값 일부러 비워두었습니다! 칼럼생성명 편한대로 만들어주셔도됩니다! -->
+      <div class="category">
+        <!-- <select name="" id="" class="block">
+          <option value="" id="">전체</option>
+          <option value="" id="service">서비스</option>
+          <option value="" id="account">계정</option>
+          <option value="" id="place">장소</option>
+          <option value="" id="modi">모디</option>
+        </select> -->
+        <!-- 
+        <div class="toggles">
+          <button id="showall">전체</button>
+          <button id="service">서비스</button>
+          <button id="account">계정</button>
+          <button id="place">장소</button>
+          <button id="modi">모디</button>
+        </div> -->
+
+        <div class="wrapper">
+          <div class="dropdown">
+            <div class="dropdown__selected">
+              <div class="dropdown__option option_select">
+                전체
+              </div>
+            </div>
+            <div class="dropdown__panel toggles">
+              <div class="dropdown__option" id="showall">
+                전체
+              </div>
+              <div class="dropdown__option" id="service">
+                서비스
+              </div>
+              <div class="dropdown__option" id="account">
+                계정
+              </div>
+              <div class="dropdown__option" id="place">
+                장소
+              </div>
+              <div class="dropdown__option" id="modi">
+                모디
+              </div>
+            </div>
+          </div>
+        </div>
+        <script defer>
+          $('#showall').click(function () {
+            $('.option_select').text('전체')
+          })
+          $('#service').click(function () {
+            $('.option_select').text('서비스')
+          })
+          $('#account').click(function () {
+            $('.option_select').text('계정')
+          })
+          $('#place').click(function () {
+            $('.option_select').text('장소')
+          })
+          $('#modi').click(function () {
+            $('.option_select').text('모디')
+          })
+        </script>
+
+
+        <div class="search">
+          <input onkeyup="filter();" type="text" id="search" placeholder="검색어를 입력하세요">
+          <img src="./assets/img/icn-search.png" alt="">
+        </div>
+      </div>
+
+      <script defer>
+        // 드롭다운메뉴 선택기능
+        $(function () {
+          $('.toggles .dropdown__option').click(function () {
+            var get_id = this.id;
+            var get_current = $('.posts .' + get_id);
+
+            $('.post').not(get_current).hide(500);
+            get_current.show(500);
+          });
+          $('#showall').click(function () {
+            $('.post').show(500);
+          });
+        });
+
+        $('.dropdown__option').click(function () {
+          $(this).closest('.dropdown').toggleClass('dropdown--opened');
+        })
+
+        // // 검색기능 script
+        // function filter() {
+        //   // var value, name, item, i; 
+
+        //   search = document.getElementById("search").value.toLowerCase();
+        //   item = document.getElementsByClassName("item");
+
+        //   for ( i = 0; i < item.length; i++) {
+        //     name = item[i].getElementsByClassName("search_name");
+        //     if (name[0].innerHTML.toLowerCase().indexOf(search) != -1) {
+        //       item[i].style.display = "block";
+        //     } else {
+        //       item[i].style.display = "none";
+        //     }
+        //   }
+        // }
+      </script>
+      <script defer>
+        function filter() {
+          let search = document.getElementById("search").value.toLowerCase();
+          let listInner = document.getElementsByClassName("listInner");
+
+          for (let i = 0; i < listInner.length; i++) {
+            city = listInner[i].getElementsByClassName("search_name");
+            // list_answer = listInner[i].getElementsByClassName("answer");
+            if (city[0].innerHTML.toLowerCase().indexOf(search) != -1
+              // || country[0].innerHTML.toLowerCase().indexOf(search) != -1
+            ) {
+              listInner[i].style.display = "block"
+            } else {
+              listInner[i].style.display = "none"
+            }
+          }
+        }
+      </script>
+
+      <div class="accordion posts">
+        <ul class="list-unstyled">
+          <!-- list S -->
+          <li class="faq_content post service listInner">
+            <div class="question">
+              <table>
+                <td>서비스</td>
+                <td class="search_name">모디는 어떤 서비스인가요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>모디는, 여러 사람들이 함께 모여 즐길 수 있는 여가 플랫폼입니다. 모두가 자신만의 콘텐츠를 만들어 여가 크레에이터(Leisure Creator)가 될 수 있습니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post account listInner">
+            <div class="question">
+              <table>
+                <td>계정</td>
+                <td class="search_name">간편 로그인에 사용한 계정(카카오, 네이버)을 탈퇴한 경우에는 어떻게 해야 하나요? </td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>간편 로그인에 사용한 카카오/네이버 계정을 탈퇴하신 경우, 해당 계정으로는 로그인이 불가능합니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post account listInner">
+            <div class="question">
+              <table>
+                <td>계정</td>
+                <td class="search_name">회원 탈퇴는 어떻게 하나요? </td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>서비스 로그인 이후 <MY-계정-서비스 탈퇴>에서 가능합니다. 탈퇴 후 삭제된 정보는 복구가 불가능하며 등록한 장소, 여가정보와 대화 내용은 삭제되지 않습니다</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post account listInner">
+            <div class="question">
+              <table>
+                <td>계정</td>
+                <td class="search_name">계정 정보(로그인 정보)가 기억나지 않으면 어떻게 해야 하나요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>앱 실행 후 <아이디/비밀번호 찾기 - 아이디 찾기 혹은 비밀번호 찾기>를 통해 회원정보를 찾을 수 있습니다. 회원정보가 존재하지 않을 경우 재가입 후 이용하시거나
+                  고객센터: support@dayoff.ai로 문의하시기 바랍니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post account listInner">
+            <div class="question">
+              <table>
+                <td>계정</td>
+                <td class="search_name">프로필 편집은 어디서 가능한가요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>
+                <MY-내 프로필 보기-편집>을 통해 프로필 사진, 닉네임, 자기소개를 편집할 수 있습니다.
+              </p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post account listInner">
+            <div class="question">
+              <table>
+                <td>계정</td>
+                <td class="search_name">적절하지 않은 프로필을 사용하는 계정이 있어요. 신고할 수 있나요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>신고를 원하는 계정 프로필로 진입하여 우측 상단 메뉴 버튼을 통해 신고할 수 있습니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post place listInner">
+            <div class="question">
+              <table>
+                <td>장소</td>
+                <td class="search_name">장소에 대한 평가(별점)을 남기려면 어떻게 해야 하나요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>장소 상세페이지에서 연필 모양 아이콘을 눌러 별점과 리뷰 내용 작성하여 평가(별점)을 남길 수 있습니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post modi listInner">
+            <div class="question">
+              <table>
+                <td>모디</td>
+                <td class="search_name">평점은 어떻게 산정되나요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>리뷰에 남겨주신 별점을 기준으로 산정됩니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post place listInner">
+            <div class="question">
+              <table>
+                <td>장소</td>
+                <td class="search_name">검색 결과에 없는 장소를 추가하고 싶어요</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>검색 결과에 없는 장소를 등록하고 싶은 경우 메뉴 탭에서 '장소'를 선택 후 오른쪽 최상단 더하기(+) 표시가 되어있는 아이콘을 누르면 장소 등록을 할 수 있습니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post modi listInner">
+            <div class="question">
+              <table>
+                <td>모디</td>
+                <td class="search_name">내 관심사/선호도를 변경할 수 있나요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>네, 내 관심사와 선호도는 MY > 내 관심사에서 언제든지 변경 가능합니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post place listInner">
+            <div class="question">
+              <table>
+                <td>장소</td>
+                <td class="search_name">추천 장소와 모디는 어떻게 보여지나요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>추천 장소와 모디는 회원님이 가입 시 입력한 (또는 MY에서 수정한) 선호도, 저장, 참여한 내역 등 다양한 정보를 고려한 알고리즘에 의해 자동 리스팅 됩니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post modi listInner">
+            <div class="question">
+              <table>
+                <td>모디</td>
+                <td class="search_name">모디 정보를 수정하거나 모디를 삭제할 수 있나요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>모디의 크리에이터인 경우 모디의 내용 수정만 가능하며 모디를 삭제할 수 없습니다. 모디 참여자 모두가 모디에서 나갈 경우 자동으로 모디이 삭제됩니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post modi listInner">
+            <div class="question">
+              <table>
+                <td>모디</td>
+                <td class="search_name">모디에 이상한 사람이 참여했어요. 어떻게 하죠?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>부적절한 언어 및 행동으로 모디의 목적과 분위기를 해치거나 다른 참여자에게 신체적, 정신적 위해를 가하는 경우, 모디장은 모디내 강퇴 기능을 이용하여 해당 사용자를 내보낼 수 있으며,
+                모든 회원들은 프로필의 신고하기 기능을 이용하여 해당 사용자의 계정의 사용 제재를 요청할 수 있습니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post modi listInner">
+            <div class="question">
+              <table>
+                <td>모디</td>
+                <td class="search_name">모디 날씨는 무엇인가요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>모디 날씨는 실제 모디에 참석한 사용자가 서로에게 보낸 매너 평가를 반영하여 날씨로 보여줍니다. 조금 더 안전한 모디를 위해 실제 모디에 참석한 사용자 서로에게 매너를 평가하는 신뢰
+                지수를 높이는 제도입니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post modi listInner">
+            <div class="question">
+              <table>
+                <td>모디</td>
+                <td class="search_name">왜 내가 참석한 모디에서 참석 취소가 되나요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>모디 크리에이터는 여러 사유로 인해 다른 사용자를 모디에서 내보낼 수 있습니다. 이 경우 해당 사용자의 모디참석이 취소됩니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post place listInner">
+            <div class="question">
+              <table>
+                <td>장소</td>
+                <td class="search_name">모디와 장소 검색이 안됩니다. 어떻게 해야하나요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>검색과 관련된 일시적 오류는 앱 히스토리 삭제 후 재실행 하거나 필터, 검색어 입력을 통해 해결하실 수 있습니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post modi listInner">
+            <div class="question">
+              <table>
+                <td>모디</td>
+                <td class="search_name">모디 참석 취소는 어떻게 해야하나요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>모디에 참석하고 싶지 않은 경우 모디 상세정보 페이지에서 모디 나가기를 통해 모디 참석을 취소할 수 있습니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post modi listInner">
+            <div class="question">
+              <table>
+                <td>모디</td>
+                <td class="search_name">나의 여행은 무엇인가요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>나의 여행은 장소 검색에서 제공하는 목록을 사용자가 여행 경로를 설정할 수 있는 기능입니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post place listInner">
+            <div class="question">
+              <table>
+                <td>장소</td>
+                <td class="search_name">장소 정보가 잘못된 경우 어떻게 수정할 수 있나요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>장소 정보가 잘못된 경우 장소 상세정보 페이지에서 '정보 수정 요청'을 통해 내용 변경 신청을 할 수 있습니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post place listInner">
+            <div class="question">
+              <table>
+                <td>장소</td>
+                <td class="search_name">내가 등록한 장소를 삭제할 수 있나요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>한 번 등록된 장소는 삭제가 어렵습니다. 자세한 문의를 원하시는 경우 고객센터나 장소 상세정보 페이지에서 '정보 수정 요청'을 통해 신청하실 수 있습니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post account listInner">
+            <div class="question">
+              <table>
+                <td>계정</td>
+                <td class="search_name">친구 기능은 무엇인가요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>모디 앱 사용자는 서로 친구를 맺을 수 있습니다. 친구가 모디를 생성하거나 내 친구인 경우 내가 만든 모디에 초대를 할 수 있습니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post modi listInner">
+            <div class="question">
+              <table>
+                <td>모디</td>
+                <td class="search_name">사용자를 신고하고 싶습니다. 어떻게 하나요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>신고를 원하시는 사용자 프로필 우측 상단에 점이 3개가 있는 버튼을 누른 뒤 신고하기를 통해 할 수 있습니다. 또한 물리적 피해나 다른 피해의 경우 국번 없이 112를 통해 신고하실 수
+                있습니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post account listInner">
+            <div class="question">
+              <table>
+                <td>계정</td>
+                <td class="search_name">로그아웃은 어떻게 하나요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>메뉴 탭에서 'MY'를 선택 후 화면 최하단에 있는 로그아웃을 통해 할 수 있습니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post modi listInner">
+            <div class="question">
+              <table>
+                <td>모디</td>
+                <td class="search_name">모디 회비는 무엇인가요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>모디 크리에이터가 모디 진행을 위해 회비가 필요한 경우 참석자에게 결제 정보를 알려줄 수 있습니다. 다만 안전결제 장치가 되어있는 경우가 아니기에 모디를 통해 만난 사용자가 결제나
+                입금을 요구하는 경우 앱 사용자 본인의 주의가 필요합니다. 모디에서 발생한 피해 금액은 자사가 보호하지 않습니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post modi listInner">
+            <div class="question">
+              <table>
+                <td>모디</td>
+                <td class="search_name">퇴장시키기는 무슨 기능인가요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>모디에 참석한 사용자가 비매너를 보이는 경우 모디 크리에이터는 특정 사용자를 퇴장시킬 수 있습니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post modi listInner">
+            <div class="question">
+              <table>
+                <td>모디</td>
+                <td class="search_name">제 채팅 기록이 보이지 않습니다.</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>회원 탈퇴 후 재가입 시 대화 내용을 포함한 기존 정보는 복구가 불가능하며 참여 중인 모디의 채팅 기록은 7일간 기록(보관) 됩니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post account listInner">
+            <div class="question">
+              <table>
+                <td>계정</td>
+                <td class="search_name">회원 탈퇴 시 삭제되는 정보와 남는 정보는 무엇인가요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>현재 참여 중이던 모든 모디에서 나가기 처리가 되며 친구 정보가 삭제 됩니다. 다만 회원 탈퇴를 하더라도 본인이 함께 했던 모디에 대한 기록은 다른 회원들의 정상적 서비스 이용을 위해
+                삭제되지 않습니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post place listInner">
+            <div class="question">
+              <table>
+                <td>장소</td>
+                <td class="search_name">지도기반(위치기반) 모디 검색은 무엇인가요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>지도를 통해 내가 관심 있는 지역의 모디 리스트를 확인할 수 있습니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post modi listInner">
+            <div class="question">
+              <table>
+                <td>모디</td>
+                <td class="search_name">내 관심사는 무엇인가요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>회원가입 시 혹은 MY에서 내가 좋아하는 여가와 모디 스타일을 설정해놓으면 사용자 선호도를 반영한 리스트를 제공해드립니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post modi listInner">
+            <div class="question">
+              <table>
+                <td>모디</td>
+                <td class="search_name">왜 내가 참석한 모디에서 참석 취소가 되나요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>모디 크리에이터는 여러 사유로 인해 다른 사용자를 모디에서 내보낼 수 있습니다. 이 경우 해당 사용자의 모디참석이 취소됩니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post service listInner">
+            <div class="question">
+              <table>
+                <td>서비스</td>
+                <td class="search_name">인증 문자와 이메일이 오지 않습니다.</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>인증 문자를 수신하지 못한 경우 휴대폰 번호를 정확하게 입력했는지 확인해 주세요. 스팸으로 차단되어 있을 경우 '차단 해제' 후 인증 문자 다시 받기를 눌러주세요.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post modi listInner">
+            <div class="question">
+              <table>
+                <td>모디</td>
+                <td class="search_name">모디 랜덤 입장은 무엇인가요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>어떤 모디에 참석할지 고민이 되는 경우 홈 화면에 '모디 랜덤 입장'을 통해 모디에 참석할 수 있습니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+
+          <!-- list S -->
+          <li class="faq_content post account listInner">
+            <div class="question">
+              <table>
+                <td>계정</td>
+                <td class="search_name">다른 사용자를 차단하면 어떻게 되나요?</td>
+                <td><img src="./assets/img/arrow.png" alt=""></td>
+              </table>
+            </div>
+            <div class="answer">
+              <p>다른 사용자를 차단할 경우 참석 중인 모디는 서로 비공개 처리됩니다. 다만 내가 차단한 사용자라도 공평한 서비스 이용을 위해 모디 검색 시 제한을 하지 않습니다. 우연한 일치로 내가
+                참석한 모디에 차단 사용자가 참석할 수 있으며, 이때 차단 행위를 한 사용자에게만 알림과 참석자 명단을 통해 알려드립니다.</p>
+            </div>
+          </li>
+          <!-- list E -->
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <script defer>
+    // 해당 질문 클릭시 나오는 상세내용
+    const accordion = document.querySelector('.accordion');
+    const items = accordion.querySelectorAll('.faq_content');
+    const questions = accordion.querySelectorAll('.question');
+
+    function toggleAccordion() {
+      const thisItem = this.parentNode;
+
+      items.forEach(item => {
+        if (thisItem == item) {
+          thisItem.classList.toggle('open');
+          return;
+        }
+
+        item.classList.remove('open');
+      });
+    }
+
+    questions.forEach(question => question.addEventListener('click', toggleAccordion));
+  </script>
+
+
+  <!-- footer S -->
+  <section class="bg__lightblue pc">
+    <div class="container container__flex section__06">
+      <div class="footer__container">
+        <p class="footer__title"><span>상호: 웰키아이앤씨 주식회사</span></p>
+        <p><span>대표자명:</span><span>신수경, 김보규</span></p>
+        <p><span>통신판매번호: 2021-서울서초-1376</span></p>
+        <!-- <p><span>대표 전화: 02-518-2378</span></p> -->
+        <p><span>사업자 등록번호: 650-86-01225</span></p>
+        <p><span>주소: 서울특별시 중구 청계천로 40, 810호(다동, 관광기업 지원센터)</span></p>
+        <p>
+          <a href="https://modiapp.notion.site/ca9747467a804b5e8c747ffa72fd0a52" target="blank">서비스 이용약관</a>
+          <a href="https://modiapp.notion.site/5fce03a0436f4315a91132e5b0bfc959" target="blank">개인정보 처리방침</a>
+        </p>
+        <p class="footer__copy"><span>ⓒ 2022 Welkey Inc. All Rights Reserved.</span></p>
+      </div>
+      <div class="footer__container">
+        <p class="footer__title"><span>서비스</span></p>
+        <p id="footerApp"><span>앱 다운로드</span></p>
+        <p class="footer__app">
+          <!-- <a onclick="iosAlert()">앱스토어</a><br> -->
+          <a href="https://apps.apple.com/kr/app/%EB%AA%A8%EB%94%94-modi/id1609915040" target="_blank">앱스토어</a><br>
+          <a href="https://play.google.com/store/apps/details?id=com.welkey.moim" target="blank">구글플레이</a>
+        </p>
+        <p><a href="/faq.html">자주 묻는 질문</a></p>
+      </div>
+      <div class="footer__container">
+        <p class="footer__title"><span>고객센터</span></p>
+        <p><a href="mailto:support@modiapp.net">support@modiapp.net</a></p>
+      </div>
+    </div>
+  </section>
+  <section class="bg__lightblue mo">
+    <div class="container container__flex section__06">
+      <div class="footer__container">
+        <p class="footer__title"><span>서비스</span></p>
+        <p id="footerApp"><span>앱 다운로드</span></p>
+        <p class="footer__app">
+          <a href="https://apps.apple.com/kr/app/%EB%AA%A8%EB%94%94-modi/id1609915040" target="_blank">앱스토어</a><br>
+          <a href="https://play.google.com/store/apps/details?id=com.welkey.moim" target="blank">구글플레이</a>
+        </p>
+        <p><a href="https://bogyu.notion.site/73e4718f7e934a58877b696e91e69592" target="blank">자주 묻는 질문</a></p>
+      </div>
+      <div class="footer__container">
+        <p class="footer__title"><span>고객센터</span></p>
+        <p><a href="mailto:support@modiapp.net">support@modiapp.net</a></p>
+      </div>
+      <div class="footer__container">
+        <p class="footer__title"><span>상호: 웰키아이앤씨 주식회사</span></p>
+        <p><span>대표자명:</span><span>신수경, 김보규</span></p>
+        <p><span>통신판매번호: 2021-서울서초-1376</span></p>
+        <!-- <p><span>대표전화: 02-518-2378</span></p> -->
+        <p><span>사업자 등록번호: 650-86-01225</span></p>
+        <p><span>주소: 서울특별시 중구 청계천로 40, 810호(다동, 관광기업 지원센터)</span></p>
+        <p>
+          <a href="https://modiapp.notion.site/ca9747467a804b5e8c747ffa72fd0a52" target="blank">서비스 이용약관</a>
+          <a href="https://modiapp.notion.site/5fce03a0436f4315a91132e5b0bfc959" target="blank">개인정보 처리방침</a>
+        </p>
+        <p class="footer__copy"><span>ⓒ 2022 Welkey Inc. All Rights Reserved.</span></p>
+      </div>
+    </div>
+  </section>
+  <script src="resource/js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- footer E -->
+</body>
+
+</html>
